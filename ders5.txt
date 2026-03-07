@@ -1,0 +1,38 @@
+
+kampus = {  "Bina" : { "kat1": {
+    "masa1": [
+
+            {
+                'isim': 'Anil',
+                'Yas': '22',
+                'Adr': 'Sinop',
+            }
+
+    ],
+     
+            },
+    "kat2": {
+        "masa1": [
+
+            {
+                'isim': 'Anil',
+                'Yas': '22',
+                'Adr': 'Sinop',
+            }
+
+        ],
+
+    }
+}
+    }
+
+for bina in kampus:
+  print("--------------------BİNA--------------")
+  for kat in bina:
+      print("-------------Kat-------------")
+      for sinif in kat:
+          print("--------Sınıf----------")
+          for masa in sinif:
+              print("====== Masa =======")
+              for ogr in sinif:
+                  print(ogr['isim'])
