@@ -1,2 +1,2 @@
 # BetikDilleri
-Ders1
+Ders İçerikleri
