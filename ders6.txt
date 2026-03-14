@@ -1,0 +1,53 @@
+class hesapMakinesi:
+    def __init__(self, sayi1, sayi2):
+        self.sayi1 = sayi1
+        self.sayi2 = sayi2
+        self.hafiza = []
+    def topla(self):
+        sonuc = self.sayi1 + self.sayi2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+
+    def cikar(self):
+        sonuc = self.sayi1 - self.sayi2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+
+    def carp(self):
+        sonuc = self.sayi1 * self.sayi2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+
+    def bol(self):
+        sonuc = self.sayi1 / self.sayi2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+
+A = hesapMakinesi(6,4)
+
+
+A.carp()
+
+A.hafiza
+print(A.hafiza)
+
+
+class CarpimTablosu:
+    def __init__(self, say):
+        self.say = say
+        self.hafiza2 = []
+
+    def tablo(self):
+        for i in range(9):
+            sonucu = self.say * i
+            print("7x",i,"=",sonucu)
+            self.hafiza2.append(sonucu)
+
+
+Carpim = CarpimTablosu(5)
+
+Carpim.tablo()
+Carpim.hafiza2
+print(Carpim.hafiza2)
+
+
